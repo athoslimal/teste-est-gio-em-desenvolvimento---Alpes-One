@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Contato - Alpes BMW</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="header-container">
+      <img src="/imgs/BMW.png" alt="Alpes BMW" class="logo">
+      <nav>
+        <ul>
+          <li><a href="#">Novos</a></li>
+          <li><a href="#">Seminovos</a></li>
+          <li><a href="#">Pós Vendas</a></li>
+          <li><a href="#">Peças e Acessórios</a></li>
+          <li><a href="#">Eventos</a></li>
+          <li><a href="#">Sobre Nós</a></li>
+        </ul>
+      </nav>
+      <div class="contact-buttons">
+        <a href="#" class="btn"><img src="/imgs/map pin.png" alt="Localização">Localização</a>
+        <a href="#" class="btn"><img src="/imgs/phone.png" alt="Telefone">Telefones</a>
+        <a href="#" class="btn"><img src="/imgs/whatsapp.png" alt="WhatsApp">WhatsApp</a>
+      </div>
+    </div>
+    <div class="header-line"></div>
+  </header>
+
+  <!-- Tela Inicial com o Formulário -->
+  <main id="contactPage" class="contact-page">
+    <div class="contact-form">
+      <h1>Entre em Contato</h1>
+      <form id="contactForm">
+        <div class="form-group">
+          <input type="text" id="name" placeholder="Nome" required>
+          <input type="email" id="email" placeholder="E-mail" required>
+        </div>
+        <div class="form-group">
+          <input type="tel" id="phone" placeholder="Telefone" required>
+          <input type="text" id="subject" placeholder="Assunto" required>
+        </div>
+        <div class="form-group">
+          <textarea id="message" placeholder="Mensagem" required></textarea>
+        </div>
+        <div class="form-footer">
+          <label for="privacy">
+            <input type="checkbox" id="privacy" required> Aceito a <a href="#">Política de Privacidade</a>
+          </label>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </main>
+
+  <!-- Modal de Sucesso (não visível inicialmente) -->
+  <div id="successModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <a href="#"><img src="/imgs/check.png" alt=></a>
+      <h2>Olá! Sua Mensagem foi recebida com sucesso!</h2>
+      <a></a>
+      <p>Em breve entraremos em contato.</p>
+      <button onclick="closeModal()">Fechar</button>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-left">
+        <div class="social-media">
+          <a href="#"><img src="/imgs/instagram.png" alt=></a>
+          <a href="#"><img src="/imgs/facebook.png" alt=></a>
+          <a href="#"><img src="/imgs/linkedin.png" alt=></a>
+          <a href="#"><img src="/imgs/youtube.png" alt=></a>
+          <a href="#"><img src="/imgs/x-twitter 1.png" alt=></a>
+          <a href="#"><img src="/imgs/whatsapp.png" alt=></a>
+        </div>
+        <p>© Copyright 2024 - Alpes BMW. Todos os direitos reservados.</p>
+      </div>
+      <div class="footer-right">
+        <p>Feito por <a href="#"><img src="/imgs/logo-alpes 2.png" alt=></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
